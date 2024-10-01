@@ -3,6 +3,29 @@ Folha de estilo do site one page HTML E CSS3
 @author maicon da fonseca da silva
 jmsystemrs.com
 */
+/* Importação google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+
+/* CSS Reset */
+*{
+   margin: 0;
+   border: 0;
+   padding: 0;
+
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1em;
+}
+
+/* Layout */
+.Container {
+    margin: 0 auto;
+background-color: aliceblue;
+}
 
 /* Smartphone Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
@@ -11,23 +34,41 @@ jmsystemrs.com
     body{
         background-color: #182E3E;
     }
+        /* Layout */
+    .Container {
+     max-width: 540px;
+    }
 }
+
 
 /* Tablet Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 768px){
     body{
         background-color: firebrick;
     }
+    /* Layout */
+    .Container {
+        max-width: 720px;
+       }
 }
 /* Tablet Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 992px){
     body{
         background-color: forestgreen;
     }
-}
+        /* Layout */
+    .Container {
+        max-width: 960px;
+       }
+    }
+
 /* PC >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 1200px){
     body{
         background-color: #182E3E;;
     }
+    /* Layout */
+    .Container {
+        max-width: 1140px;
+       }
 }
