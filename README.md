@@ -17,3 +17,8 @@ JMsystem soluções em informática e sistemas para o seu negócio
 [iconfinder](https://www.iconfinder.com/)
 
 [optmizilla](https://imagecompressor.com/pt/)
+
+##Validação W3C
+[html]https://validator.w3.org/
+[css]
+https://jigsaw.w3.org/css-validator/
