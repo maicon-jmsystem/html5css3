@@ -13,10 +13,10 @@ jmsystemrs.com
 }
 
 /* CSS Reset */
-*{
-   margin: 0;
-   border: 0;
-   padding: 0;
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
 
 }
 
@@ -34,18 +34,23 @@ body {
 .Flex {
     display: flex;
     justify-content: space-between;
-    
+
 }
 
 
 
 /*topo do site */
- #topo {
+#topo {
     position: fixed;
     right: 10px;
     bottom: 10px;
- }
+}
+
 /* Smartphone Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+body {
+    background-color: #182E3E;
+    ;
+}
 
 /*Cabeçalho*/
 header {
@@ -78,8 +83,8 @@ nav ul {
     transition: all 0.5s;
 }
 
-#check:checked ~ ul{
-   right: 0;
+#check:checked~ul {
+    right: 0;
 }
 
 nav ul li {
@@ -92,73 +97,125 @@ nav ul li a {
     color: #fff;
 }
 
+/* Destaque*/
+main {
+    height: 75vh;
+    background: url(img/banner1.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+main h1 {
+    font-size: 2.5em;
+}
+
+main h4 {
+    font-size: 1em;
+}
+
 /* Smartphone Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
-@media (min-width: 576px){
-    body{
-        background-color: #182E3E;;
+@media (min-width: 576px) {
+    body {
+        background-color: #182E3E;
+        ;
     }
-        /* Layout */
+
+    /* Layout */
     .Container {
-     max-width: 776px;
+        max-width: 776px;
     }
+
+    /*Destaque baner*/
+    main h1,
+    main h4 {
+        text-shadow: #000 0.05em 0.05em 0.05em;
+    }
+
 }
 
 
 /* Tablet Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
-@media (min-width: 968px){
-    
-    
+@media (min-width: 968px) {
+
+
     /* Layout */
     .Container {
         max-width: 920px;
-       }
-}
-/* Tablet Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
-@media (min-width: 1024px){
-    
-        /* Layout */
-    .Container {
-        max-width: 1024px;
-       }
     }
 
-/* PC >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
-@media (min-width: 1200px){
-    body{
-        background-color: #182E3E;;
+    /* Destaque */
+    main {
+        height: 45vh;
     }
+     
+    main h1 {
+        font-size: 3.5em;
+    }
+
+    main h4 {
+        font-size: 1.5em;
+    }
+}
+
+/* Tablet Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+@media (min-width: 992px) {
+
+    /* Layout */
+    .Container {
+        max-width: 960px;
+    }
+    main {
+        height: 70vh;
+    }
+}
+
+/* PC >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+@media (min-width: 1200px) {
+    body {
+        background-color: #182E3E;
+        ;
+    }
+
     /* Layout */
     .Container {
         max-width: 1140px;
-       }
-/* Cabeçalho */
-header {
-    height: 120px;
+    }
 
-}
-   #logo img {
-    
-    left: 40px;
-    width: 182px;
-    height: 182px;
-    margin-top: -30px;
-}
+    /* Cabeçalho */
+    header {
+        height: 120px;
+
+    }
+
+    #logo img {
+
+        left: 40px;
+        width: 182px;
+        height: 182px;
+        margin-top: -30px;
+    }
+
     label {
         display: none;
 
     }
-    
+
     nav ul {
         position: static;
         height: auto;
         background-color: transparent;
         margin-top: 50px;
     }
+
     nav ul li {
         float: left;
         border: 0;
-    
+
     }
+
     /* Mudar a cor das fontes dos atalhos do cabeçalho 
     nav ul li a {
           color: #182E3E;
@@ -168,4 +225,3 @@ header {
         color: #a9a9a9;
     }
 }
-
