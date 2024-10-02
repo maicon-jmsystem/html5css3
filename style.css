@@ -7,6 +7,10 @@ jmsystemrs.com
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 
+/* Class Cores da fonte*/
+.first {
+    color: aliceblue;
+}
 
 /* CSS Reset */
 *{
@@ -24,41 +28,97 @@ body {
 /* Layout */
 .Container {
     margin: 0 auto;
-background-color: aliceblue;
+
 }
 
+.Flex {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+
+
+/*topo do site */
+ #topo {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+ }
 /* Smartphone Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+/*Cabeçalho*/
+header {
+    height: 60px;
+}
+
+#logo img {
+    width: 128px;
+    height: 128px;
+    margin-top: -10px;
+}
+
+#check {
+    display: none;
+}
+
+label {
+    font-size: 3em;
+    padding-right: 15px;
+}
+
+nav ul {
+    list-style: none;
+    background-color: #343534;
+    height: 100vh;
+    position: fixed;
+    top: 60px;
+    right: -100%;
+    width: 100%;
+    transition: all 0.5s;
+}
+
+#check:checked ~ ul{
+   right: 0;
+}
+
+nav ul li {
+    padding: 20px;
+    border-bottom: 1px solid #a9a9a9;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
 
 /* Smartphone Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 576px){
     body{
-        background-color: #182E3E;
+        background-color: #182E3E;;
     }
         /* Layout */
     .Container {
-     max-width: 540px;
+     max-width: 776px;
     }
 }
 
 
 /* Tablet Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
-@media (min-width: 768px){
-    body{
-        background-color: firebrick;
-    }
+@media (min-width: 968px){
+    
+    
     /* Layout */
     .Container {
-        max-width: 720px;
+        max-width: 920px;
        }
 }
 /* Tablet Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
-@media (min-width: 992px){
-    body{
-        background-color: forestgreen;
-    }
+@media (min-width: 1024px){
+    
         /* Layout */
     .Container {
-        max-width: 960px;
+        max-width: 1024px;
        }
     }
 
@@ -71,4 +131,41 @@ background-color: aliceblue;
     .Container {
         max-width: 1140px;
        }
+/* Cabeçalho */
+header {
+    height: 120px;
+
 }
+   #logo img {
+    
+    left: 40px;
+    width: 182px;
+    height: 182px;
+    margin-top: -30px;
+}
+    label {
+        display: none;
+
+    }
+    
+    nav ul {
+        position: static;
+        height: auto;
+        background-color: transparent;
+        margin-top: 50px;
+    }
+    nav ul li {
+        float: left;
+        border: 0;
+    
+    }
+    /* Mudar a cor das fontes dos atalhos do cabeçalho 
+    nav ul li a {
+          color: #182E3E;
+    }*/
+
+    nav ul li a:hover {
+        color: #a9a9a9;
+    }
+}
+
